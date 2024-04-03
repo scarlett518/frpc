@@ -1,7 +1,7 @@
 serverAddr = "frp.freefrp.net"
-serverPort = 7000
+serverPort = 5443
 auth.method = "token"
-auth.token = "freefrp.net"
+auth.token = "jknxsxHBFp1KLW38"
 
 [[proxies]]
 name = "web1_xxxxx"

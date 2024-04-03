@@ -16,7 +16,7 @@ WORK_PATH=$(dirname $(readlink -f $0))
 FRP_NAME=frpc
 FRP_VERSION=0.56.0
 FRP_PATH=/usr/local/frp
-PROXY_URL="https://mirror.ghproxy.com/"
+PROXY_URL="https://gh.151314.xyz/"
 
 # check frpc
 if [ -f "/usr/local/frp/${FRP_NAME}" ] || [ -f "/usr/local/frp/${FRP_NAME}.toml" ] || [ -f "/lib/systemd/system/${FRP_NAME}.service" ];then
@@ -95,9 +95,9 @@ mv ${FILE_NAME}/${FRP_NAME} ${FRP_PATH}
 RADOM_NAME=$(cat /dev/urandom | head -n 10 | md5sum | head -c 8)
 cat >${FRP_PATH}/${FRP_NAME}.toml<<EOF
 serverAddr = "frp.freefrp.net"
-serverPort = 7000
+serverPort = 5443
 auth.method = "token"
-auth.token = "freefrp.net"
+auth.token = "jknxsxHBFp1KLW38"
 
 [[proxies]]
 name = "web1_${RADOM_NAME}"
