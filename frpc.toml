@@ -20,6 +20,7 @@ localPort = 5001
 customDomains = ["nas.yourdomain.com"]
 transport.useEncryption = true 
 transport.useCompression = true 
+
 [[proxies]]
 name = "tcp1_xxxxx"
 type = "tcp"
