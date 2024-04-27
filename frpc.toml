@@ -3,6 +3,9 @@ serverPort = 5443
 auth.method = "token"
 auth.token = "jknxsxHBFp1KLW38"
 
+transport.tls.enable = false
+transport.tls.disableCustomTLSFirstByte = false
+
 [[proxies]]
 name = "web1_xxxxx"
 type = "http"
