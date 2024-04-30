@@ -35,7 +35,7 @@
 
 安装
 ```shell
-wget gh.151314.xyz/https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://gh.151314.xyz/https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 ```
 
 使用
