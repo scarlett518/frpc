@@ -1,7 +1,7 @@
 serverAddr = "frp.freefrp.net"
 serverPort = 5443
 auth.method = "token"
-auth.token = "jknxsxHBFp1KLW38"
+auth.token = "jknxsxHBFp1KLW39"
 
 transport.tls.enable = false
 transport.tls.disableCustomTLSFirstByte = false
