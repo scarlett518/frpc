@@ -97,28 +97,37 @@ cat >${FRP_PATH}/${FRP_NAME}.toml<<EOF
 serverAddr = "frp.freefrp.net"
 serverPort = 5443
 auth.method = "token"
-auth.token = "jknxsxHBFp1KLW38"
+auth.token = "jknxsxHBFp1KLW39"
+
+transport.tls.enable = false
+transport.tls.disableCustomTLSFirstByte = false
 
 [[proxies]]
-name = "web1_${RADOM_NAME}"
+name = "web1_xxxxx"
 type = "http"
-localIP = "192.168.1.2"
+localIP = "127.0.0.1"
 localPort = 5000
 customDomains = ["nas.yourdomain.com"]
+transport.useEncryption = true  
+transport.useCompression = true 
 
 [[proxies]]
-name = "web2_${RADOM_NAME}"
+name = "web2_xxxxx"
 type = "https"
-localIP = "192.168.1.2"
+localIP = "127.0.0.1"
 localPort = 5001
 customDomains = ["nas.yourdomain.com"]
+transport.useEncryption = true 
+transport.useCompression = true 
 
 [[proxies]]
-name = "tcp1_${RADOM_NAME}"
+name = "tcp1_xxxxx"
 type = "tcp"
-localIP = "192.168.1.3"
+localIP = "127.0.0.1"
 localPort = 22
 remotePort = 22222
+transport.useEncryption = true  
+transport.useCompression = true   
 
 EOF
 
