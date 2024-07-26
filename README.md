@@ -35,7 +35,7 @@
 
 安装
 ```shell
-wget https://gh.151314.xyz/https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 ```
 
 使用
@@ -48,7 +48,7 @@ sudo systemctl restart frpc
 
 卸载
 ```shell
-wget gh.151314.xyz/https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
+wget https://raw.githubusercontent.com/scarlett518/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 # 以下为国内镜像
 wget https://github.ioiox.com/stilleshan/frpc/raw/branch/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 ```
