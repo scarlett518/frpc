@@ -1,5 +1,7 @@
 serverAddr = "frp.freefrp.net"
 serverPort = 5443
+
+user = u1
 auth.method = "token"
 auth.token = "jknxsxHBFp1KLW39"
 
