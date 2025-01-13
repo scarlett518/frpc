@@ -4,7 +4,7 @@ serverPort = 5443
 user = "u1"
 auth.method = "token"
 auth.token = "jknxsxHBFp1KLW39"
-
+transport.tls.enable = true
 
 [[proxies]]
 name = "web1_xxxxx"
