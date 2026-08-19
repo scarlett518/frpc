@@ -79,11 +79,11 @@ FILE_NAME=frp_${FRP_VERSION}_linux_${PLATFORM}
 if [ $GOOGLE_HTTP_CODE == "200" ]; then
     wget -P ${WORK_PATH} https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FILE_NAME}.tar.gz -O ${FILE_NAME}.tar.gz
 else
-    if [ 200 == "200" ]; then
+    if [ PROXY_HTTP_CODE == "200" ]; then
         wget -P ${WORK_PATH} ${PROXY_URL}https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FILE_NAME}.tar.gz -O ${FILE_NAME}.tar.gz
     else
         echo -e "${Red}检测 GitHub Proxy 代理失效 开始使用官方地址下载${Font}"
-        wget -P ${WORK_PATH} https://dh.hhhy.de/github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FILE_NAME}.tar.gz -O ${FILE_NAME}.tar.gz
+        wget -P ${WORK_PATH} https:/github.com/fatedier/frp/releases/download/v${FRP_VERSION}/${FILE_NAME}.tar.gz -O ${FILE_NAME}.tar.gz
     fi
 fi
 tar -zxvf ${FILE_NAME}.tar.gz
